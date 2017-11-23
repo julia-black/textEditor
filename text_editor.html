@@ -1,0 +1,113 @@
+<!DOCTYPE=HTML>
+<html>
+	<head>
+     	<title>Text Editor</title>
+        <link rel="stylesheet" href="style.css">
+	 	<!--<link rel="stylesheet" href="modal_style.css">-->
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+        <div class="container">    
+            <div class="navbar navbar-fixed-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a href="#" if="file "class="dropdown-toggle clearfix col-xs-20 col-md-20 col-lg-20 col-sm-20" data-toggle="dropdown">File<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" class="importButton">Import</a></li>
+                        <li><a href="#" class="exportButton">Export</a></li>
+                        <li><a href="#" class="printButton">Print</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" if="edit" class="dropdown-toggle clearfix col-xs-20 col-md-20 col-lg-20 col-sm-20" data-toggle="dropdown">Edit<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+						  <li><a href="#" class="undoButton"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Undo<span class="comb">Ctrl+Z</span></a></li>
+                        <li><a href="#" class="redoButton"><span class="glyphicon glyphicon-arrow-right"></span> Redo<span class="comb">Ctrl+Y</span></a></li>
+						  <li class="divider"></li>
+                        <li><a href="#" class="cutButton"><span class="glyphicon glyphicon-scissors"></span> Cut <span class="comb">Ctrl+X</span></a></li>
+						  <li><a href="#" class="copyButton"> <span class="glyphicon glyphicon-duplicate"> </span> Copy<span class="comb">Ctrl+C</span></a></li>
+                        <li><a href="#" class="pasteButton"> <span class="glyphicon glyphicon-paste"> </span> Paste<span class="comb">Ctrl+V</span></a></li>
+                        <li><a href="#" class="pasteAsText"> Paste as text</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="subnav">
+                <ul class="nav nav-pills navbar-default">
+                    <li><a id="but" class="undoButton" href="#"><span class="glyphicon glyphicon-arrow-left"></span></a></li>
+                    <li><a href="#" class="redoButton" ><span class="glyphicon glyphicon-arrow-right"></span></a></li>
+                    <li><a href="#" class="boldButton"><span class="glyphicon glyphicon-bold"></span></a></li>
+                    <li><a href="#" class="italicButton"><span class="glyphicon glyphicon-italic"></span></a></li>
+                    <li><a href="#" class="ulineButton"><span class="glyphicon glyphicon-text-color"></span></a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle clearfix visible-xs visible-sm visible-md visible-lg" data-toggle="dropdown"><span class="glyphicon glyphicon-align-left"></span><b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" class="leftButton"><span class="glyphicon glyphicon-align-left"></span></a></li>
+                        <li><a href="#" class="centerButton"><span class="glyphicon glyphicon-align-center"></span> </a></li>
+                        <li><a href="#" class="rightButton"><span class="glyphicon glyphicon-align-right"></span> </a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#" class="tableButton" id="tableButton"><span class="glyphicon glyphicon-th"></span></a></li>
+                    <li><a href="#" class="picButton"><span class="glyphicon glyphicon-picture"></span></a></li>
+					<!--<li><a href="#" class="telButton"><span class="glyphicon glyphicon-phone"></span></a></li>-->
+                </ul>
+            </div>
+			<div id="text" contenteditable="true"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+				 </div>
+        </div>
+        <div id="modal_form_container">
+			<form id="picture_form">
+				<h3>Add picture:</h3>
+				<p>Enter URL pictures or select on your PC:</p>
+				<div id="prompt_message">
+					<p>URL
+						<input type="text" name="URL" id="URL" value="URL" size="20">
+					</p>
+					<p>
+						<input class = "okButton" type="button" value="OK">
+						<input class = "cancelButton" type="button" value="Cancel">
+					</p>
+				</div>
+			</form>
+			<form id="prompt_form">
+				<h3>Add table</h3>
+				<p>Enter the counts rows and colums:</p>
+				<div id="prompt_message">
+					<p>Rows:
+						<input type="text" name="rows" id="rows" value="3" size="2">
+					</p>
+					<p>Colums:
+						<input type="text" name="colms" id = "colms" value="3" size="2">
+					</p>
+					<p>
+						<input class = "okButton" type="button" value="OK">
+						<input class = "cancelButton" type="button" value="Cancel">
+					</p>
+				</div>
+			</form>
+            <form id="import_form">
+                <h3>Import JSON file</h3>
+                <p>Select file in your PC:</p>
+                <div id="prompt_message_import">
+                    <p>
+                        <input type="file" id="inpImport" multiple="false"/><br/>
+                    </p>
+                    <p>
+                        <input class = "cancelButton" type="button" value="Cancel">
+                    </p>
+                </div>
+            </form>
+
+		</div>
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js" defer></script>
+        <script src="script.js" defer></script>
+        <script src="History.js" defer></script>
+
+		
+    </body>
+</html>

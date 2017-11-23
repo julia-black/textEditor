@@ -1,0 +1,143 @@
+.dropdown-menu{
+	display: flex;
+	width: 300px;
+	border: 1px solid #ccc;
+    background-color: white;
+    z-index: 100;
+}
+
+a, li{
+    font-family: sans-serif;
+    text-decoration: none; 
+    color:black;
+}
+
+.header{
+    top:0;
+    left:0;
+}
+li{
+    list-style-type: none;
+}
+ul {
+    padding-left: 10px; 
+   }
+
+#text{
+	position: fixed;
+    z-index: 1;
+    top:90px;
+    bottom:10px;
+    left: 0px;
+    width: 100%;
+	overflow-y: auto;
+}
+.pastAsText{
+	padding-left: 18px;
+}
+.comb{
+	float: right;
+	color: gray;
+	background: none;
+}
+.subnav{
+	display: flex;
+    flex-direction: column-reverse;
+	position: absolute;
+	left: 0px;
+    margin-top: 50px;
+    
+}
+.navbar-fixed-top{
+    position: fixed;
+}
+a{
+    text-decoration-color: black;
+}
+.dropdown-menu, .open, li{
+    z-index: 100;
+}
+span, .dropdown, li, ul, b, a, .dropdown-toggle{
+    color:black;
+    z-index: 100;
+}
+.bold{
+    font-weight: 600;
+}
+.nonbold{
+	font-weight: 100;
+}
+.italic{
+	font-style: italic;
+}
+.nonitalic{
+	font-style: normal;
+}
+.underline{
+	text-decoration: underline;
+}
+.nonunderline{
+	text-decoration: none !important;
+}
+.left{
+	text-align: left;
+}
+.center{
+	text-align: center;
+}
+.right{
+	text-align: right;	
+}
+table{
+	 border: 1px solid black;
+}
+th, td{
+	 border: 1px solid black;
+}
+
+html,body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+   }
+
+#prompt_form, #picture_form, #import_form {
+	display: none;
+  	padding: 20px;
+	width: 200px;
+	border: 1px solid black;
+	vertical-align: middle;
+	text-align: center;
+	width: auto;
+	background-color: white;
+}
+
+#modal_form_container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#modal_form_container:before {
+ 	 display: inline-block;
+ 	 height: 100%;
+ 	 content: '';
+ 	 vertical-align: middle;
+}
+
+#cover-div {
+ 	 position: fixed;
+ 	 top: 0;
+ 	 left: 0;
+ 	 z-index: 9000;
+ 	 width: 100%;
+ 	 height: 100%;
+ 	 background-color: gray;
+ 	 opacity: 0.3;
+}
